@@ -1,26 +1,29 @@
 //
-//  ISLingustics.m
-//  ISLingustics
+//  ISLingusticsHelper.m
+//  ISLingusticsHelper
 //
 //  Created by Iain Smith on 13/04/2013.
 //  Copyright (c) 2013 mountain23. All rights reserved.
 //
 
-#import "ISLingustics.h"
-@interface ISLingustics ()
+#import "ISLingusticsHelper.h"
+@interface ISLingusticsHelper ()
 {
     NSLinguisticTagger *_tagger;
     NSString *_currentLanguage;
 }
 
 @property (strong, nonatomic) NSLinguisticTagger *tagger;
+
 - (NSLinguisticTaggerOptions)options;
 - (NSArray *)stringsFromString:(NSString *)string limitedToType:(NSString *)NSLingusticTagConstant forLanguague:(NSString *)languageStandardAbbreviation;
 - (NSArray *)stringsFromString:(NSString *)string delimitedByUnit:(NSStringEnumerationOptions)unit;
 
 @end
 
-@implementation ISLingustics
+@implementation ISLingusticsHelper
+
+#pragma mark - Initializers
 
 - (id)init
 {
@@ -35,6 +38,8 @@
     }
     return self;
 }
+
+#pragma mark - Getters/Setters
 
 - (void)setString:(NSString *)string
 {
@@ -53,16 +58,51 @@
     return _tagger;
 }
 
+#pragma mark - Internal Methods
+
 - (NSLinguisticTaggerOptions)options {
     return NSLinguisticTaggerOmitPunctuation | NSLinguisticTaggerOmitWhitespace | NSLinguisticTaggerJoinNames;
 }
 
-- (NSString *)languageStandardAbbreviationFromString:(NSString *)string
+- (NSString *)languageStandardAbbreviation
 {
     return _currentLanguage;
 }
 
-- (NSArray *)rootLowerCaseNounsForString;
+- (NSArray *)stringsFromString:(NSString *)string delimitedByUnit:(NSStringEnumerationOptions)unit;
+{
+    __block NSMutableArray *words = [NSMutableArray array];
+    
+    [string enumerateSubstringsInRange:NSMakeRange(0, string.length) options:unit usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+        substring = [substring stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        [words addObject:substring];
+    }];
+    
+    return words;
+}
+
+- (NSArray *)stringsFromString:(NSString *)string limitedToType:(NSString *)NSLingusticTagConstant forLanguague:(NSString *)languageStandardAbbreviation
+{
+    __block NSMutableArray *matches = [NSMutableArray array];
+    
+    [self.tagger enumerateTagsInRange:NSMakeRange(0, string.length) scheme:NSLinguisticTagSchemeNameTypeOrLexicalClass options:[self options] usingBlock:^(NSString *tag, NSRange tokenRange, NSRange sentenceRange, BOOL *stop) {
+        if (tag == NSLingusticTagConstant) {
+            NSString *match = [string substringWithRange:tokenRange];
+            [matches addObject:match];
+        }
+    }];
+    
+    return matches;
+}
+
+#pragma mark - Public Methods
+
+- (NSArray *)nouns;
+{
+    return [self stringsFromString:self.string limitedToType:NSLinguisticTagNoun forLanguague:_currentLanguage];
+}
+
+- (NSArray *)rootLowerCaseNouns;
 {
     __block NSMutableArray *nouns = [NSMutableArray array];
     __block NSMutableArray *matchedNouns = [NSMutableSet set];
@@ -92,58 +132,27 @@
     return nouns;
 }
 
-- (NSArray *)stringsFromString:(NSString *)string delimitedByUnit:(NSStringEnumerationOptions)unit;
+- (NSArray *)words;
 {
-    __block NSMutableArray *words = [NSMutableArray array];
-    
-    [string enumerateSubstringsInRange:NSMakeRange(0, string.length) options:unit usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
-        substring = [substring stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        [words addObject:substring];
-    }];
-    
-    return words;
+    return [[[ISLingusticsHelper alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationByWords];
 }
 
-- (NSArray *)stringsFromString:(NSString *)string limitedToType:(NSString *)NSLingusticTagConstant forLanguague:(NSString *)languageStandardAbbreviation
+- (NSArray *)sentences;
 {
-    __block NSMutableArray *matches = [NSMutableArray array];
-    
-    [self.tagger enumerateTagsInRange:NSMakeRange(0, string.length) scheme:NSLinguisticTagSchemeNameTypeOrLexicalClass options:[self options] usingBlock:^(NSString *tag, NSRange tokenRange, NSRange sentenceRange, BOOL *stop) {
-        if (tag == NSLingusticTagConstant) {
-            NSString *match = [string substringWithRange:tokenRange];
-            [matches addObject:match];
-        }
-    }];
-    
-    return matches;
+    return [[[ISLingusticsHelper alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationBySentences];
 }
 
-- (NSArray *)wordsFromString;
-{
-    return [[[ISLingustics alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationByWords];
-}
-
-- (NSArray *)sentencesFromString;
-{
-    return [[[ISLingustics alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationBySentences];
-}
-
-- (NSArray *)nounsForString;
-{
-    return [self stringsFromString:self.string limitedToType:NSLinguisticTagNoun forLanguague:_currentLanguage];
-}
-
-- (NSArray *)verbsForString;
+- (NSArray *)verbs;
 {
     return [self stringsFromString:self.string limitedToType:NSLinguisticTagVerb forLanguague:_currentLanguage];
 }
 
-- (NSArray *)placeNamesForString;
+- (NSArray *)placeNames;
 {
     return [self stringsFromString:self.string limitedToType:NSLinguisticTagPlaceName forLanguague:_currentLanguage];
 }
 
-- (NSArray *)personalNamesFromString;
+- (NSArray *)personalNames;
 {
     return [self stringsFromString:self.string limitedToType:NSLinguisticTagPersonalName forLanguague:_currentLanguage];
 }

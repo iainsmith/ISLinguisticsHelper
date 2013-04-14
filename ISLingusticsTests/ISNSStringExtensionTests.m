@@ -31,7 +31,6 @@
     
     STAssertTrue(sentences.count == 2, @"count should be 2, was:%i", sentences.count);
     STAssertTrue([sentences[0] isEqualToString:@"this string has Two sentences."], nil);
-
 }
 
 - (void)testEnumerationByNouns
@@ -44,7 +43,6 @@
     STAssertTrue(nouns.count == 2, @"count should be 2, was:%i", nouns.count);
     STAssertTrue([nouns[0] isEqualToString:@"string"], @"Expected noun to be: string , was :%@", nouns[0]);
     STAssertTrue([nouns[1] isEqualToString:@"nouns"], @"Expected noun to be: noun , was :%@", nouns[0]);
-
 }
 
 - (void)testEnumerationByVerbs
@@ -58,7 +56,6 @@
     STAssertTrue([verbs[0] isEqualToString:@"has"], nil);
     STAssertTrue([verbs[1] isEqualToString:@"am"], nil);
     STAssertTrue([verbs[2] isEqualToString:@"playing"], nil);
-
 }
 
 

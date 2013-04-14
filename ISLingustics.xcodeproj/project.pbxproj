@@ -21,7 +21,7 @@
 		0A3A8F4D1719FA5400BF78AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3A8F2E1719FA5400BF78AA /* Foundation.framework */; };
 		0A3A8F551719FA5400BF78AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A3A8F531719FA5400BF78AA /* InfoPlist.strings */; };
 		0A3A8F581719FA5400BF78AA /* ISLingusticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F571719FA5400BF78AA /* ISLingusticsTests.m */; };
-		0A3A8F631719FA6D00BF78AA /* ISLingustics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F621719FA6D00BF78AA /* ISLingustics.m */; };
+		0A3A8F631719FA6D00BF78AA /* ISLingusticsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F621719FA6D00BF78AA /* ISLingusticsHelper.m */; };
 		0A3A8F66171A1F6100BF78AA /* NSString+ISLingustics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F65171A1F6100BF78AA /* NSString+ISLingustics.m */; };
 		0A3A8F69171A20F000BF78AA /* ISNSStringExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F68171A20F000BF78AA /* ISNSStringExtensionTests.m */; };
 /* End PBXBuildFile section */
@@ -56,8 +56,8 @@
 		0A3A8F541719FA5400BF78AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A3A8F561719FA5400BF78AA /* ISLingusticsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISLingusticsTests.h; sourceTree = "<group>"; };
 		0A3A8F571719FA5400BF78AA /* ISLingusticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISLingusticsTests.m; sourceTree = "<group>"; };
-		0A3A8F611719FA6D00BF78AA /* ISLingustics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISLingustics.h; path = Classes/ISLingustics.h; sourceTree = "<group>"; };
-		0A3A8F621719FA6D00BF78AA /* ISLingustics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISLingustics.m; path = Classes/ISLingustics.m; sourceTree = "<group>"; };
+		0A3A8F611719FA6D00BF78AA /* ISLingusticsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISLingusticsHelper.h; path = Classes/ISLingusticsHelper.h; sourceTree = "<group>"; };
+		0A3A8F621719FA6D00BF78AA /* ISLingusticsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISLingusticsHelper.m; path = Classes/ISLingusticsHelper.m; sourceTree = "<group>"; };
 		0A3A8F64171A1F6100BF78AA /* NSString+ISLingustics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ISLingustics.h"; sourceTree = "<group>"; };
 		0A3A8F65171A1F6100BF78AA /* NSString+ISLingustics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ISLingustics.m"; sourceTree = "<group>"; };
 		0A3A8F67171A20F000BF78AA /* ISNSStringExtensionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNSStringExtensionTests.h; sourceTree = "<group>"; };
@@ -93,8 +93,8 @@
 			children = (
 				0A3A8F64171A1F6100BF78AA /* NSString+ISLingustics.h */,
 				0A3A8F65171A1F6100BF78AA /* NSString+ISLingustics.m */,
-				0A3A8F611719FA6D00BF78AA /* ISLingustics.h */,
-				0A3A8F621719FA6D00BF78AA /* ISLingustics.m */,
+				0A3A8F611719FA6D00BF78AA /* ISLingusticsHelper.h */,
+				0A3A8F621719FA6D00BF78AA /* ISLingusticsHelper.m */,
 				0A3A8F321719FA5400BF78AA /* ISLingustics */,
 				0A3A8F501719FA5400BF78AA /* ISLingusticsTests */,
 				0A3A8F2B1719FA5400BF78AA /* Frameworks */,
@@ -279,7 +279,7 @@
 			files = (
 				0A3A8F391719FA5400BF78AA /* main.m in Sources */,
 				0A3A8F3D1719FA5400BF78AA /* ISAppDelegate.m in Sources */,
-				0A3A8F631719FA6D00BF78AA /* ISLingustics.m in Sources */,
+				0A3A8F631719FA6D00BF78AA /* ISLingusticsHelper.m in Sources */,
 				0A3A8F66171A1F6100BF78AA /* NSString+ISLingustics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

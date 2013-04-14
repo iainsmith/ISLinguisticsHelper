@@ -1,5 +1,5 @@
 //
-//  NSString+ISLoingustics.m
+//  NSString+ISLingustics.m
 //  ISLingustics
 //
 //  Created by Iain Smith on 14/04/2013.
@@ -9,6 +9,8 @@
 #import "NSString+ISLingustics.h"
 
 @implementation NSString (ISLingustics)
+
+#pragma mark - Interanl Methods
 
 - (void)enumerateByUnit:(NSEnumerationOptions)unit UsingBlock_is:(void (^)(NSString *string, BOOL *stop))block {
     [self enumerateSubstringsInRange:NSMakeRange(0, self.length) options:unit usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
@@ -32,6 +34,8 @@
     }];
 }
 
+#pragma mark - Public Methods
+
 - (void)enumerateWordsUsingBlock_is:(void (^)(NSString *word, BOOL *stop))block {
     [self enumerateByUnit:NSStringEnumerationByWords UsingBlock_is:block];
 }
@@ -40,12 +44,12 @@
     [self enumerateByUnit:NSStringEnumerationBySentences UsingBlock_is:block];
 }
 
-- (void)enumerateNounsUsingBlock_is:(void (^)(NSString *word, BOOL *stop))block
+- (void)enumerateNounsUsingBlock_is:(void (^)(NSString *noun, BOOL *stop))block
 {
     [self enumerateByWordType:NSLinguisticTagNoun withBlock_is:block];
 }
 
-- (void)enumerateVerbsUsingBlock_is:(void (^)(NSString *word, BOOL *stop))block;
+- (void)enumerateVerbsUsingBlock_is:(void (^)(NSString *verb, BOOL *stop))block;
 {
     [self enumerateByWordType:NSLinguisticTagVerb withBlock_is:block];
 }
