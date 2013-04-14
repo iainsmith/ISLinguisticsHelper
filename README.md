@@ -13,7 +13,7 @@ NSArray *verbs = [helper verbs];
 ```
 
 ### To do
-- Add to Cocoapods
-- Add MIT License
+- ~~Add to Cocoapods~~ (pull request pending)
+- ~~Add MIT License~~
 - Upload AppleDoc to gihub pages
 - Add some NSData detector Methods
