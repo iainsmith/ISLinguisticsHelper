@@ -1,6 +1,6 @@
 //
-//  NSString+ISLingustics.h
-//  ISLingustics
+//  NSString+ISLingusitics.h
+//  ISLingusitics
 //
 //  Created by Iain Smith on 14/04/2013.
 //  Copyright (c) 2013 mountain23. All rights reserved.
@@ -12,7 +12,7 @@
  `NSString+ISLingusitcs' provides a set of conveniences methods for enumerating differenet lingustic properties of strings correctly for languages supported by NSLingusticTagger.
  */
 
-@interface NSString (ISLingustics)
+@interface NSString (ISLinguistics)
 
 /**
  Enumerates all the words in a string.

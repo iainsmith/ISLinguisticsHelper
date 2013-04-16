@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A3A8F281719FA5400BF78AA"
-               BuildableName = "ISLingustics.app"
-               BlueprintName = "ISLingustics"
-               ReferencedContainer = "container:ISLingustics.xcodeproj">
+               BuildableName = "ISLinguistics.app"
+               BlueprintName = "ISLinguistics"
+               ReferencedContainer = "container:ISLinguistics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A3A8F481719FA5400BF78AA"
-               BuildableName = "ISLingusticsTests.octest"
-               BlueprintName = "ISLingusticsTests"
-               ReferencedContainer = "container:ISLingustics.xcodeproj">
+               BuildableName = "ISLinguisticsTests.octest"
+               BlueprintName = "ISLinguisticsTests"
+               ReferencedContainer = "container:ISLinguistics.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A3A8F281719FA5400BF78AA"
-            BuildableName = "ISLingustics.app"
-            BlueprintName = "ISLingustics"
-            ReferencedContainer = "container:ISLingustics.xcodeproj">
+            BuildableName = "ISLinguistics.app"
+            BlueprintName = "ISLinguistics"
+            ReferencedContainer = "container:ISLinguistics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A3A8F281719FA5400BF78AA"
-            BuildableName = "ISLingustics.app"
-            BlueprintName = "ISLingustics"
-            ReferencedContainer = "container:ISLingustics.xcodeproj">
+            BuildableName = "ISLinguistics.app"
+            BlueprintName = "ISLinguistics"
+            ReferencedContainer = "container:ISLinguistics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A3A8F281719FA5400BF78AA"
-            BuildableName = "ISLingustics.app"
-            BlueprintName = "ISLingustics"
-            ReferencedContainer = "container:ISLingustics.xcodeproj">
+            BuildableName = "ISLinguistics.app"
+            BlueprintName = "ISLinguistics"
+            ReferencedContainer = "container:ISLinguistics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

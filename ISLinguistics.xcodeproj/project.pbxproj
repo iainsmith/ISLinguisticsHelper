@@ -20,46 +20,46 @@
 		0A3A8F4C1719FA5400BF78AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3A8F2C1719FA5400BF78AA /* UIKit.framework */; };
 		0A3A8F4D1719FA5400BF78AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3A8F2E1719FA5400BF78AA /* Foundation.framework */; };
 		0A3A8F551719FA5400BF78AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A3A8F531719FA5400BF78AA /* InfoPlist.strings */; };
-		0A3A8F581719FA5400BF78AA /* ISLingusticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F571719FA5400BF78AA /* ISLingusticsTests.m */; };
-		0A3A8F631719FA6D00BF78AA /* ISLingusticsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F621719FA6D00BF78AA /* ISLingusticsHelper.m */; };
-		0A3A8F66171A1F6100BF78AA /* NSString+ISLingustics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F65171A1F6100BF78AA /* NSString+ISLingustics.m */; };
+		0A3A8F581719FA5400BF78AA /* ISLinguisticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F571719FA5400BF78AA /* ISLinguisticsTests.m */; };
+		0A3A8F631719FA6D00BF78AA /* ISLinguisticsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F621719FA6D00BF78AA /* ISLinguisticsHelper.m */; };
+		0A3A8F66171A1F6100BF78AA /* NSString+ISLinguistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F65171A1F6100BF78AA /* NSString+ISLinguistics.m */; };
 		0A3A8F69171A20F000BF78AA /* ISNSStringExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A8F68171A20F000BF78AA /* ISNSStringExtensionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A3A8F4E1719FA5400BF78AA /* PBXContainerItemProxy */ = {
+		0AE50416171D97E80092601B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A3A8F211719FA5400BF78AA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0A3A8F281719FA5400BF78AA;
-			remoteInfo = ISLingustics;
+			remoteInfo = ISLinguistics;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A3A8F291719FA5400BF78AA /* ISLingustics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISLingustics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3A8F291719FA5400BF78AA /* ISLinguistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISLinguistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3A8F2C1719FA5400BF78AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A3A8F2E1719FA5400BF78AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A3A8F301719FA5400BF78AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0A3A8F341719FA5400BF78AA /* ISLingustics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISLingustics-Info.plist"; sourceTree = "<group>"; };
+		0A3A8F341719FA5400BF78AA /* ISLinguistics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISLinguistics-Info.plist"; sourceTree = "<group>"; };
 		0A3A8F361719FA5400BF78AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A3A8F381719FA5400BF78AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A3A8F3A1719FA5400BF78AA /* ISLingustics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISLingustics-Prefix.pch"; sourceTree = "<group>"; };
+		0A3A8F3A1719FA5400BF78AA /* ISLinguistics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISLinguistics-Prefix.pch"; sourceTree = "<group>"; };
 		0A3A8F3B1719FA5400BF78AA /* ISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAppDelegate.h; sourceTree = "<group>"; };
 		0A3A8F3C1719FA5400BF78AA /* ISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAppDelegate.m; sourceTree = "<group>"; };
 		0A3A8F3E1719FA5400BF78AA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0A3A8F401719FA5400BF78AA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0A3A8F421719FA5400BF78AA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0A3A8F491719FA5400BF78AA /* ISLingusticsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISLingusticsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3A8F491719FA5400BF78AA /* ISLinguisticsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISLinguisticsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3A8F4A1719FA5400BF78AA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0A3A8F521719FA5400BF78AA /* ISLingusticsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISLingusticsTests-Info.plist"; sourceTree = "<group>"; };
+		0A3A8F521719FA5400BF78AA /* ISLinguisticsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISLinguisticsTests-Info.plist"; sourceTree = "<group>"; };
 		0A3A8F541719FA5400BF78AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A3A8F561719FA5400BF78AA /* ISLingusticsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISLingusticsTests.h; sourceTree = "<group>"; };
-		0A3A8F571719FA5400BF78AA /* ISLingusticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISLingusticsTests.m; sourceTree = "<group>"; };
-		0A3A8F611719FA6D00BF78AA /* ISLingusticsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISLingusticsHelper.h; path = ISLingusticsHelper/ISLingusticsHelper.h; sourceTree = "<group>"; };
-		0A3A8F621719FA6D00BF78AA /* ISLingusticsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISLingusticsHelper.m; path = ISLingusticsHelper/ISLingusticsHelper.m; sourceTree = "<group>"; };
-		0A3A8F64171A1F6100BF78AA /* NSString+ISLingustics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ISLingustics.h"; path = "ISLingusticsHelper/NSString+ISLingustics.h"; sourceTree = "<group>"; };
-		0A3A8F65171A1F6100BF78AA /* NSString+ISLingustics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ISLingustics.m"; path = "ISLingusticsHelper/NSString+ISLingustics.m"; sourceTree = "<group>"; };
+		0A3A8F561719FA5400BF78AA /* ISLinguisticsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISLinguisticsTests.h; sourceTree = "<group>"; };
+		0A3A8F571719FA5400BF78AA /* ISLinguisticsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISLinguisticsTests.m; sourceTree = "<group>"; };
+		0A3A8F611719FA6D00BF78AA /* ISLinguisticsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISLinguisticsHelper.h; path = ISLinguisticsHelper/ISLinguisticsHelper.h; sourceTree = "<group>"; };
+		0A3A8F621719FA6D00BF78AA /* ISLinguisticsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISLinguisticsHelper.m; path = ISLinguisticsHelper/ISLinguisticsHelper.m; sourceTree = "<group>"; };
+		0A3A8F64171A1F6100BF78AA /* NSString+ISLinguistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ISLinguistics.h"; path = "ISLinguisticsHelper/NSString+ISLinguistics.h"; sourceTree = "<group>"; };
+		0A3A8F65171A1F6100BF78AA /* NSString+ISLinguistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ISLinguistics.m"; path = "ISLinguisticsHelper/NSString+ISLinguistics.m"; sourceTree = "<group>"; };
 		0A3A8F67171A20F000BF78AA /* ISNSStringExtensionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNSStringExtensionTests.h; sourceTree = "<group>"; };
 		0A3A8F68171A20F000BF78AA /* ISNSStringExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISNSStringExtensionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,12 +91,12 @@
 		0A3A8F201719FA5400BF78AA = {
 			isa = PBXGroup;
 			children = (
-				0A3A8F64171A1F6100BF78AA /* NSString+ISLingustics.h */,
-				0A3A8F65171A1F6100BF78AA /* NSString+ISLingustics.m */,
-				0A3A8F611719FA6D00BF78AA /* ISLingusticsHelper.h */,
-				0A3A8F621719FA6D00BF78AA /* ISLingusticsHelper.m */,
-				0A3A8F321719FA5400BF78AA /* ISLingustics */,
-				0A3A8F501719FA5400BF78AA /* ISLingusticsTests */,
+				0A3A8F64171A1F6100BF78AA /* NSString+ISLinguistics.h */,
+				0A3A8F65171A1F6100BF78AA /* NSString+ISLinguistics.m */,
+				0A3A8F611719FA6D00BF78AA /* ISLinguisticsHelper.h */,
+				0A3A8F621719FA6D00BF78AA /* ISLinguisticsHelper.m */,
+				0A3A8F321719FA5400BF78AA /* ISLinguistics */,
+				0A3A8F501719FA5400BF78AA /* ISLinguisticsTests */,
 				0A3A8F2B1719FA5400BF78AA /* Frameworks */,
 				0A3A8F2A1719FA5400BF78AA /* Products */,
 			);
@@ -105,8 +105,8 @@
 		0A3A8F2A1719FA5400BF78AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A3A8F291719FA5400BF78AA /* ISLingustics.app */,
-				0A3A8F491719FA5400BF78AA /* ISLingusticsTests.octest */,
+				0A3A8F291719FA5400BF78AA /* ISLinguistics.app */,
+				0A3A8F491719FA5400BF78AA /* ISLinguisticsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,23 +122,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A3A8F321719FA5400BF78AA /* ISLingustics */ = {
+		0A3A8F321719FA5400BF78AA /* ISLinguistics */ = {
 			isa = PBXGroup;
 			children = (
 				0A3A8F3B1719FA5400BF78AA /* ISAppDelegate.h */,
 				0A3A8F3C1719FA5400BF78AA /* ISAppDelegate.m */,
 				0A3A8F331719FA5400BF78AA /* Supporting Files */,
 			);
-			path = ISLingustics;
+			name = ISLinguistics;
+			path = ISLinguistics;
 			sourceTree = "<group>";
 		};
 		0A3A8F331719FA5400BF78AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A3A8F341719FA5400BF78AA /* ISLingustics-Info.plist */,
+				0A3A8F341719FA5400BF78AA /* ISLinguistics-Info.plist */,
 				0A3A8F351719FA5400BF78AA /* InfoPlist.strings */,
 				0A3A8F381719FA5400BF78AA /* main.m */,
-				0A3A8F3A1719FA5400BF78AA /* ISLingustics-Prefix.pch */,
+				0A3A8F3A1719FA5400BF78AA /* ISLinguistics-Prefix.pch */,
 				0A3A8F3E1719FA5400BF78AA /* Default.png */,
 				0A3A8F401719FA5400BF78AA /* Default@2x.png */,
 				0A3A8F421719FA5400BF78AA /* Default-568h@2x.png */,
@@ -146,22 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A3A8F501719FA5400BF78AA /* ISLingusticsTests */ = {
+		0A3A8F501719FA5400BF78AA /* ISLinguisticsTests */ = {
 			isa = PBXGroup;
 			children = (
 				0A3A8F67171A20F000BF78AA /* ISNSStringExtensionTests.h */,
 				0A3A8F68171A20F000BF78AA /* ISNSStringExtensionTests.m */,
-				0A3A8F561719FA5400BF78AA /* ISLingusticsTests.h */,
-				0A3A8F571719FA5400BF78AA /* ISLingusticsTests.m */,
+				0A3A8F561719FA5400BF78AA /* ISLinguisticsTests.h */,
+				0A3A8F571719FA5400BF78AA /* ISLinguisticsTests.m */,
 				0A3A8F511719FA5400BF78AA /* Supporting Files */,
 			);
-			path = ISLingusticsTests;
+			name = ISLinguisticsTests;
+			path = ISLinguisticsTests;
 			sourceTree = "<group>";
 		};
 		0A3A8F511719FA5400BF78AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A3A8F521719FA5400BF78AA /* ISLingusticsTests-Info.plist */,
+				0A3A8F521719FA5400BF78AA /* ISLinguisticsTests-Info.plist */,
 				0A3A8F531719FA5400BF78AA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -170,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A3A8F281719FA5400BF78AA /* ISLingustics */ = {
+		0A3A8F281719FA5400BF78AA /* ISLinguistics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A3A8F5B1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLingustics" */;
+			buildConfigurationList = 0A3A8F5B1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLinguistics" */;
 			buildPhases = (
 				0A3A8F251719FA5400BF78AA /* Sources */,
 				0A3A8F261719FA5400BF78AA /* Frameworks */,
@@ -182,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = ISLingustics;
-			productName = ISLingustics;
-			productReference = 0A3A8F291719FA5400BF78AA /* ISLingustics.app */;
+			name = ISLinguistics;
+			productName = ISLinguistics;
+			productReference = 0A3A8F291719FA5400BF78AA /* ISLinguistics.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A3A8F481719FA5400BF78AA /* ISLingusticsTests */ = {
+		0A3A8F481719FA5400BF78AA /* ISLinguisticsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A3A8F5E1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLingusticsTests" */;
+			buildConfigurationList = 0A3A8F5E1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLinguisticsTests" */;
 			buildPhases = (
 				0A3A8F441719FA5400BF78AA /* Sources */,
 				0A3A8F451719FA5400BF78AA /* Frameworks */,
@@ -199,11 +201,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				0A3A8F4F1719FA5400BF78AA /* PBXTargetDependency */,
+				0AE50417171D97E80092601B /* PBXTargetDependency */,
 			);
-			name = ISLingusticsTests;
-			productName = ISLingusticsTests;
-			productReference = 0A3A8F491719FA5400BF78AA /* ISLingusticsTests.octest */;
+			name = ISLinguisticsTests;
+			productName = ISLinguisticsTests;
+			productReference = 0A3A8F491719FA5400BF78AA /* ISLinguisticsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +218,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mountain23;
 			};
-			buildConfigurationList = 0A3A8F241719FA5400BF78AA /* Build configuration list for PBXProject "ISLingustics" */;
+			buildConfigurationList = 0A3A8F241719FA5400BF78AA /* Build configuration list for PBXProject "ISLinguistics" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A3A8F281719FA5400BF78AA /* ISLingustics */,
-				0A3A8F481719FA5400BF78AA /* ISLingusticsTests */,
+				0A3A8F281719FA5400BF78AA /* ISLinguistics */,
+				0A3A8F481719FA5400BF78AA /* ISLinguisticsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,8 +281,8 @@
 			files = (
 				0A3A8F391719FA5400BF78AA /* main.m in Sources */,
 				0A3A8F3D1719FA5400BF78AA /* ISAppDelegate.m in Sources */,
-				0A3A8F631719FA6D00BF78AA /* ISLingusticsHelper.m in Sources */,
-				0A3A8F66171A1F6100BF78AA /* NSString+ISLingustics.m in Sources */,
+				0A3A8F631719FA6D00BF78AA /* ISLinguisticsHelper.m in Sources */,
+				0A3A8F66171A1F6100BF78AA /* NSString+ISLinguistics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3A8F581719FA5400BF78AA /* ISLingusticsTests.m in Sources */,
+				0A3A8F581719FA5400BF78AA /* ISLinguisticsTests.m in Sources */,
 				0A3A8F69171A20F000BF78AA /* ISNSStringExtensionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,10 +298,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A3A8F4F1719FA5400BF78AA /* PBXTargetDependency */ = {
+		0AE50417171D97E80092601B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A3A8F281719FA5400BF78AA /* ISLingustics */;
-			targetProxy = 0A3A8F4E1719FA5400BF78AA /* PBXContainerItemProxy */;
+			target = 0A3A8F281719FA5400BF78AA /* ISLinguistics */;
+			targetProxy = 0AE50416171D97E80092601B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,9 +387,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ISLingustics/ISLingustics-Prefix.pch";
-				INFOPLIST_FILE = "ISLingustics/ISLingustics-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ISLinguistics/ISLinguistics-Prefix.pch";
+				INFOPLIST_FILE = "ISLinguistics/ISLinguistics-Info.plist";
+				PRODUCT_NAME = ISLinguistics;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,9 +398,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ISLingustics/ISLingustics-Prefix.pch";
-				INFOPLIST_FILE = "ISLingustics/ISLingustics-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ISLinguistics/ISLinguistics-Prefix.pch";
+				INFOPLIST_FILE = "ISLinguistics/ISLinguistics-Info.plist";
+				PRODUCT_NAME = ISLinguistics;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -406,15 +408,15 @@
 		0A3A8F5F1719FA5400BF78AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ISLingustics.app/ISLingustics";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ISLinguistics.app/ISLinguistics";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ISLingustics/ISLingustics-Prefix.pch";
-				INFOPLIST_FILE = "ISLingusticsTests/ISLingusticsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ISLinguistics/ISLinguistics-Prefix.pch";
+				INFOPLIST_FILE = "ISLinguisticsTests/ISLinguisticsTests-Info.plist";
+				PRODUCT_NAME = ISLinguisticsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -423,15 +425,15 @@
 		0A3A8F601719FA5400BF78AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ISLingustics.app/ISLingustics";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ISLinguistics.app/ISLinguistics";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ISLingustics/ISLingustics-Prefix.pch";
-				INFOPLIST_FILE = "ISLingusticsTests/ISLingusticsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ISLinguistics/ISLinguistics-Prefix.pch";
+				INFOPLIST_FILE = "ISLinguisticsTests/ISLinguisticsTests-Info.plist";
+				PRODUCT_NAME = ISLinguisticsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -440,7 +442,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A3A8F241719FA5400BF78AA /* Build configuration list for PBXProject "ISLingustics" */ = {
+		0A3A8F241719FA5400BF78AA /* Build configuration list for PBXProject "ISLinguistics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A3A8F591719FA5400BF78AA /* Debug */,
@@ -449,7 +451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A3A8F5B1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLingustics" */ = {
+		0A3A8F5B1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLinguistics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A3A8F5C1719FA5400BF78AA /* Debug */,
@@ -458,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A3A8F5E1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLingusticsTests" */ = {
+		0A3A8F5E1719FA5400BF78AA /* Build configuration list for PBXNativeTarget "ISLinguisticsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A3A8F5F1719FA5400BF78AA /* Debug */,

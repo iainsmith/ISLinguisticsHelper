@@ -1,14 +1,14 @@
 //
-//  NSString+ISLingustics.m
-//  ISLingustics
+//  NSString+ISLingusitics.m
+//  ISLingusitics
 //
 //  Created by Iain Smith on 14/04/2013.
 //  Copyright (c) 2013 mountain23. All rights reserved.
 //
 
-#import "NSString+ISLingustics.h"
+#import "NSString+ISLinguistics.h"
 
-@implementation NSString (ISLingustics)
+@implementation NSString (ISLinguistics)
 
 #pragma mark - Interanl Methods
 

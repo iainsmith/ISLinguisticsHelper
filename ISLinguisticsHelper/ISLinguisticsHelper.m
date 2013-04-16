@@ -1,13 +1,13 @@
 //
-//  ISLingusticsHelper.m
-//  ISLingusticsHelper
+//  ISLingusiticsHelper.m
+//  ISLingusiticsHelper
 //
 //  Created by Iain Smith on 13/04/2013.
 //  Copyright (c) 2013 mountain23. All rights reserved.
 //
 
-#import "ISLingusticsHelper.h"
-@interface ISLingusticsHelper ()
+#import "ISLinguisticsHelper.h"
+@interface ISLinguisticsHelper ()
 {
     NSLinguisticTagger *_tagger;
     NSString *_currentLanguage;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation ISLingusticsHelper
+@implementation ISLinguisticsHelper
 
 #pragma mark - Initializers
 
@@ -134,12 +134,12 @@
 
 - (NSArray *)words;
 {
-    return [[[ISLingusticsHelper alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationByWords];
+    return [[[ISLinguisticsHelper alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationByWords];
 }
 
 - (NSArray *)sentences;
 {
-    return [[[ISLingusticsHelper alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationBySentences];
+    return [[[ISLinguisticsHelper alloc] init] stringsFromString:self.string delimitedByUnit:NSStringEnumerationBySentences];
 }
 
 - (NSArray *)verbs;

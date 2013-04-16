@@ -1,13 +1,13 @@
 //
 //  ISNSStringExtensionTests.m
-//  ISLingustics
+//  ISLingusitics
 //
 //  Created by Iain Smith on 14/04/2013.
 //  Copyright (c) 2013 mountain23. All rights reserved.
 //
 
 #import "ISNSStringExtensionTests.h"
-#import "NSString+ISLingustics.h"
+#import "NSString+ISLinguistics.h"
 
 @implementation ISNSStringExtensionTests
 

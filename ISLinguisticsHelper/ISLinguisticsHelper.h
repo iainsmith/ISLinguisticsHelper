@@ -1,6 +1,6 @@
 //
-//  ISLingusticsHelper.h
-//  ISLingusticsHelper
+//  ISLingusiticsHelper.h
+//  ISLingusiticsHelper
 //
 //  Created by Iain Smith on 13/04/2013.
 //  Copyright (c) 2013 mountain23. All rights reserved.
@@ -11,17 +11,17 @@
 /**
  The ISLingusitcsHelper class provides a simple api for extracting different lingustic properties from strings for languages supported by NSLingustic tagger. This is useful for building search indexes and analysing patterns in user data. 
  
- An instance of ISLingusticsHelper holds a string to be analysed to reduce overhead in processing the same string for different properties.
+ An instance of ISLingusiticsHelper holds a string to be analysed to reduce overhead in processing the same string for different properties.
  */
 
-@interface ISLingusticsHelper : NSObject
+@interface ISLinguisticsHelper : NSObject
 
 /**
  The string to be analyzed.
  
  If you call init you must call setString yourself.
  
-    ISLingusticsHelper *helper = [[ISLingusticsHelper alloc] init];
+    ISLingusiticsHelper *helper = [[ISLingusiticsHelper alloc] init];
     [helper setString:(@"The string to be analysed")];
  */
 @property (copy, nonatomic) NSString *string;
